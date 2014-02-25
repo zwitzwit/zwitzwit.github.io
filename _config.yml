@@ -1,0 +1,18 @@
+auto:	          true
+
+markdown:         rdiscount
+pygments:         true
+paginate:         1
+permalink:        /:categories/:year/:month/:day/:title/
+
+title:            "FengKang's Blog"
+url:              http://fengkang.me
+feed:             /feed.xml
+author:
+    name:         FengKang
+    twitter:      twitter.com/guojing
+    key:          jguoer
+description:      "人生的几个十年"
+copyright:        "CopryRight FengKang 2014 by GitHub and Jekyll"
+headdesc:         "FengKang的博客，记录工作和生活，讲述自己的网络营销道路与医疗营销的那些事。"
+headkeys:         "FengKang,冯康的博客,医疗营销,网络营销,SEM,SEO,微营销,社会化媒体营销"
