@@ -1,9 +1,9 @@
 ---
 layout:  page
-title: Archive
+title: 归档
 description: 归档
 ---
-即将来临的一天，比过去的一年更为悠长：
+人生，最宝贵的莫过于光阴。人生，最璀璨的莫过于事业。人生，最快乐的莫过于奋斗。
 
 <ul class="archive">
 {% for post in site.posts %}
