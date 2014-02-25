@@ -9,11 +9,6 @@
 
 上面两点`请你注意`，一是你留着也没意思，二是我会觉得不爽，感觉不被尊重。如果你使用了我的代码，你应该是一个技术人员，你知道不被尊重的感觉，也希望以后能被人尊重，对吧。
 
-有一点请你`了解`，但你有权利不做：
-
-1. 请保留我的Copyright，可以写成皮肤由我设计。
-2. 尊重我作为最原始作者的劳动成果。
-
 ## 部署 ##
 
 根据这些步骤，你可以很简单的部署到自己的Github上。
@@ -25,41 +20,6 @@
 5. git push到自己的项目中。
 
 根据上面的步骤你就可以正式使用此博客了。
-
-## 我默认关闭了评论功能 ##
-
-开启:
-
-注释掉_layouts/post.html
-
-	<!--
-	<div class="comments {{ page.categories }}_comments_css">
-	<div id="disqus_container"> 
-    	{% if page.not_comment %}
-    	<span class="comment">该文章已关闭评论。</span>
-    	{% else %}
-    	<a href="#" class="comment" onclick="return false;">点击评论或查看评论。</a>
-    	{% endif %}    
-    	<div id="disqus_thread"></div>
-	</div>
-	</div>
-	-->
-
-## 替换评论key ##
-
-如果你不替换，你会评论到我的博客url下面，不会在你的评论系统你出现。这里使用的评论系统是disqus，你可以在config里配置评论申请的key。
-
-    author:
-        name:         Your Name
-        twitter:      twitter.com/youraccount
-        key:          your disqus key
-
-## 如何使用 ##
-
-如何创建Github Pages并且写东西，而且是很geek的方法，请看:
-
-1. [使用Github Pages建独立博客](http://beiyuu.com/github-pages/)
-2. [Jekyll常用函数和技巧](http://guojing.me/blog/2012/11/14/jekyll-and-github-tec/)
 
 ## 一些变量 ##
 
