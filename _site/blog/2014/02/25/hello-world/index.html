@@ -118,16 +118,23 @@ function getURLParameter(name) {
 </div>
 -->
 
+<div class="comments">
+<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread"></div>
 <script type="text/javascript">
-    $(document).ready(function(){
-        $('#disqus_container .comment').on('click',function(){
-            $(this).html('加载中...');
-    var disqus_shortname = 'jguoer';
-            var that = this;
-            BYB.includeScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
-        });
-});
+var duoshuoQuery = {short_name:"fengkangblog"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
 </script>
+<!-- Duoshuo Comment END -->
+</div>
+
 
 <div class="footer">
 CopryRight <a href="http://fengkang.me/" target="_blank">FengKang</a> 2014 by <a href="http://www.github.com/" target="_blank">GitHub</a> and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
