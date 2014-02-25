@@ -1,5 +1,5 @@
 body {font:12px/1.6 arial,helvetica,sans-serif;margin:0;padding:0;color:#4d4d4d; background: #F7FAFB}
-body {font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3", "Georgia", "Xin Gothic", "Hiragino Sans GB", Arial, "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", 'Proxima Nova','Open Sans',sans-serif; font-size:1.125em;-webkit-font-smoothing:subpixel-antialiased;}
+body {font-family: "Hiragino Kaku Gothic Pro", "Georgia", "Xin Gothic", "Hiragino Sans GB", Arial, "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", 'Proxima Nova','Open Sans',sans-serif; font-size:1.125em;-webkit-font-smoothing:subpixel-antialiased;}
 
 h1, h2, h3, h4, h5, h6 {color: black; margin:15px 0}
 
@@ -69,7 +69,7 @@ a:link{text-decoration:none;}
 
 .content strong {color:black;}
 
-.comments {margin-bottom:30px; margin-top: 50px}
+.comments {margin-bottom:30px; margin-top: 0px}
 .comments .comment {font-size: 1.2em;}
 
 .archive, .content{list-style: none; padding: 0px}
