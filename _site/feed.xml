@@ -1,18 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>GuoJing's Blog</title>
+		<title>FengKang's Blog</title>
 		<description>人生的几个十年</description>
 		<link>http://fengkang.me</link>
 		<atom:link href="http://fengkang.me/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Hello world!</title>
-				<description>&lt;h3&gt;Hello World!&lt;/h3&gt;
+				<title>Hello world</title>
+				<description>&lt;p&gt;&lt;img src=&quot;http://image226-c.poco.cn/mypoco/myphoto/20140228/02/1744117532014022802153112THX.jpg&quot; alt=&quot;Hello world&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;走了这么些年，到头来又回到了&lt;code&gt;github+Jekyll&lt;/code&gt;的博客构架中，经历了众多博客后，拨开天空的乌云，仿佛突然眼前一亮，脑袋里豁然开朗，之前的那些都不是我想要的，我只想要一个干净纯洁的空间，存放自己一生的记忆。&lt;/p&gt;
+
+&lt;p&gt;今天博客开张，以后就在这里书写心情，记录资料。。。。。等等等等。&lt;/p&gt;
+
+&lt;p&gt;如果偶然你来到了这里，不要吝啬你的字符，请在&lt;a href=&quot;/guestbook/&quot; title=&quot;留言板&quot;&gt;留言&lt;/a&gt;中留下您的大名！&lt;/p&gt;
 </description>
-				<pubDate>Tue, 25 Feb 2014 00:00:00 +0800</pubDate>
-				<link>http://fengkang.me/blog/2014/02/25/hello-world/</link>
-				<guid isPermaLink="true">http://fengkang.me/blog/2014/02/25/hello-world/</guid>
+				<pubDate>Fri, 28 Feb 2014 00:00:00 +0800</pubDate>
+				<link>http://fengkang.me/blog/2014/02/28/hello-world/</link>
+				<guid isPermaLink="true">http://fengkang.me/blog/2014/02/28/hello-world/</guid>
+			</item>
+		
+			<item>
+				<title>code test</title>
+				<description>&lt;p&gt;测试一段程序，看显示的如何&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for(var i=0; i&amp;lt;10; i++){
+    document.write(i);
+}
+alert(&#39;hello&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;fdfdsaf&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(document).ready(function(){
+    $(&#39;a&#39;).hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+});
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + &#39;=&#39; + &#39;(.+?)(&amp;amp;|$)&#39;).exec(location.search)||[,null])[1]
+    );
+}
+$(document).ready(function(){
+    $(&#39;a&#39;).hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+});
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + &#39;=&#39; + &#39;(.+?)(&amp;amp;|$)&#39;).exec(location.search)||[,null])[1]
+    );
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+				<pubDate>Fri, 28 Feb 2014 00:00:00 +0800</pubDate>
+				<link>http://fengkang.me/test/2014/02/28/code-test/</link>
+				<guid isPermaLink="true">http://fengkang.me/test/2014/02/28/code-test/</guid>
 			</item>
 		
 	</channel>

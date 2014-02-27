@@ -16,6 +16,7 @@
   <meta content="FengKang,冯康的博客,医疗营销,网络营销,SEM,SEO,微营销,社会化媒体营销" name="keywords"/>
 </head>
 <body>
+
 <div class="container">
 <div class="banner">
 <ul class="nav nav-pills">
@@ -45,11 +46,67 @@ function getURLParameter(name) {
 </script>
 
 </div>
-<div class="main">
-<div class="title"><a href="/404.html">404</a></div>
-<div class="content">
-	啊，Σ(っﾟДﾟ；)っ，这个页面好像暂时还不存在呢。
+
+<div class="main clearfix">
+
+<div class="posts">
+<div class="title"><a href="/test/2014/02/28/code-test/">code test</a></div>
+<div class="content test_content_css">
+<p>测试一段程序，看显示的如何</p>
+
+<pre><code>for(var i=0; i&lt;10; i++){
+    document.write(i);
+}
+alert('hello');
+</code></pre>
+
+<p>fdfdsaf</p>
+
+<pre><code>$(document).ready(function(){
+    $('a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+});
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&amp;|$)').exec(location.search)||[,null])[1]
+    );
+}
+$(document).ready(function(){
+    $('a').hover(
+        function(){
+            $(this).animate({opacity: 0.3}, 400)
+        }, 
+        function(){
+            $(this).animate({opacity: 1}, 400)
+        });
+});
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&amp;|$)').exec(location.search)||[,null])[1]
+    );
+}
+</code></pre>
+
 </div>
+<div class="info">
+记于2014年02月28日 EOF
+</div>
+
+<div class="forb">
+
+<a href="/tags/#code">#code</a>
+
+<a href="/tags/#test">#test</a>
+
+</div>
+</div>
+
+
 </div>
 
 <div class="footer">

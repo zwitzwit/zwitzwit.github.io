@@ -81,7 +81,7 @@ ul, ol {margin: 0px; list-style:none}
 
 code {border:1px dashed #ccc;  -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; box-shadow:inset 1px 1px white; font-family:monospace; color:black; background: white; font-size:14px;}
 
-pre {padding:10px; background:#f4f4f4;  -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:none;line-height:3.2em}
+pre {padding:10px; background:#f4f4f4;  -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:none;}
 pre code {border: none; box-shadow: none; font-size: 14px}
 pre {margin-bottom: 25px}
 
