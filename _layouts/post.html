@@ -14,16 +14,12 @@
 
 <body>
 <div class="main">
-    <div class="sidernav fl" id="siderNav">
-        <div class="logopt"><div class="logo"><a href="/" title="返回网站首页">返回首页</a></div></div>
-        {% include banner.html %}
-        <a href="/" class="circle_back" title="返回网站首页">返回</a>
-    </div>
+    {% include banner.html %}
     <div class="maincont fl">
         <div class="introducts" id="commonbox">
             <div class="hd">
-                 <h1>IUNI品牌介绍</h1>
-                 <h2>{{ page.title }}</h2>
+                 <h2>医疗网络营销人：冯康（交流QQ：350905009）</h2>
+                 <h1>{{ page.title }}</h1>
             </div>
             <div class="artcils">
                 {{ content }}
@@ -61,18 +57,6 @@
         $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
         prettyPrint();
     })
-
-    if (window.innerHeight)
-    winHeight = window.innerHeight;
-    else if ((document.body) && (document.body.clientHeight))
-    winHeight = document.body.clientHeight;
-    var oht=document.getElementById("commonbox").offsetHeight;//内容高度
-    var o2ht=winHeight;
-     if(o2ht>=oht){
-        document.getElementById("siderNav").style.height=o2ht+"px";
-     }else{
-         document.getElementById("siderNav").style.height=oht+"px";
-     }
 </script>
 </body>
 </html>

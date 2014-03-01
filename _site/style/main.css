@@ -3,10 +3,14 @@
 ::-moz-selection{background-color:#FD3939; color: #fff;}
 img::selection{background:transparent}
 img::-moz-selection{background:transparent}
-body{font-family: Tahoma,"Hiragino Sans GB","Microsoft YaHei",arial,simsun,sans-serif; background: #f6f6f6; min-width: 1000px;}
-.tbg { background:#15a583 url(/images/theme/bg.png) no-repeat top center;}
+body{font-family: Tahoma,"Hiragino Sans GB","Microsoft YaHei",arial,simsun,sans-serif; background: #f6f6f6 url(/images/theme/bodybg.png) repeat-y left top; min-width: 1000px;}
+.tbg { background:url(/images/theme/bg.png) no-repeat top center;}
 .c:after{ content:".";display:block;font-size:0;line-height:0;height:0;clear:both;visibility:hidden;}
 .c{display:inline-table;}
+a:link,a:visited{color: #02A881}
+a:hover{color: #CF012B}
+ol,ul{list-style-position: inside; color: #666; margin: 1em 0 1em 1em; line-height: 1.8; font-family:inherit; font-size: 110%}
+li{font-family: inherit; color: inherit;}
 /* Hides from IE-mac \*/
 * html .c {height: 1%;}
 .c{display: block;}
@@ -31,15 +35,15 @@ body{font-family: Tahoma,"Hiragino Sans GB","Microsoft YaHei",arial,simsun,sans-
 	.sinawb i{ background-position: -102px 0;}
 	.logopt{padding-top: 50px; padding-left:45px; padding-right: 30px}
 	/*innerpage*/
-	.main{ width: 100%; background: #f6f6f6;  height: 100%; min-height: 950px}
-	.sidernav{ min-height:950px; height: 950px; position: relative; background: #02a881 ;}
+	.main{ width: 100%; height: 100%; min-height: 950px}
+	.sidernav{ position: relative;}
 	.maincont{ background: #f6f6f6; padding-bottom: 70px}
 	.logo{width: 106px; height: 56px; background: url(/images/theme/spr.png) no-repeat 0 0;}
 	.logo a{display: block; width: 106px; height: 56px; text-indent: -9999px; overflow-x: hidden;}
 	.sd_menu{margin-top: 90px; line-height: 40px; color: #fff; list-style: none;}
 	.sd_menu a{color: #fff; text-decoration: none}
 	.sd_menu li{ position: relative; text-align: right;padding-right: 30px;	}
-	.sd_menu li i{ position: absolute; right: 0; top: 12px; _top: 6px; _right: -1px; display: block; width:7px; height: 16px; overflow: hidden; background: url(/images/theme/spr.png) no-repeat -193px 0; display: none; }
+	.sd_menu li i{ position: absolute; right: 6px; top: 12px; _top: 6px; _right: -1px; display: block; width:7px; height: 16px; overflow: hidden; background: url(/images/theme/spr.png) no-repeat -193px 0; display: none; }
 	.sd_menu li.on i{display: block;}
 	.circle_back { position: absolute; top: 440px; right: 30px; display: block;  width: 50px; height: 30px; background: url(/images/theme/spr.png) no-repeat 0 -58px; padding-top: 50px; text-align: center; color: #007358; text-decoration: none; }
 	.circle_back:hover{ background-position: -51px -58px; color: #5ed3b8 }
@@ -50,17 +54,18 @@ body{font-family: Tahoma,"Hiragino Sans GB","Microsoft YaHei",arial,simsun,sans-
 	.about_us .iuni_codepics{ bottom: 0; left: 0 }
 	.introducts,.join_us{ padding-left: 85px; padding-top: 50px; width: 71%; min-height: 500px; background: #f6f6f6}
 	.introducts .hd{ height:52px; border-left:#02a881 5px solid; padding-left: 15px; margin-bottom: 50px;  }
-	.introducts .hd h2{ font-weight: normal; color: #666666; font-size: 35px; line-height: 32px}
-	.introducts .hd h1{ color: #666666; font-size: 14px; font-weight: normal;}
+	.introducts .hd h1{ font-weight: normal; color: #666666; font-size: 35px; line-height: 32px}
+	.introducts .hd h2{ color: #666666; font-size: 14px; font-weight: normal;}
 
 	.introducts,.join_us{ position: absolute; top: 0; }
 	.artcils {  width: 100%;  min-height:500px; font-size: 16px; padding-bottom: 50px; font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif}
-	.artcils p{ line-height: 1.8; color: #666666; font-size:110%;}
+	.artcils p{ line-height: 1.8; color: #666666; font-size:110%; margin-bottom: 1em;}
 	.artcils h3{color: #02a881; font-weight: bold; font-size: 120%; line-height: 30px; margin-top: 2em; margin-bottom: 2em;}
 	.artcils img {  padding-right: 40px; padding-bottom: 20px; }
 	.tongji{display: none;}
-	.text_date{ padding-top: 60px;}
+	.text_date{ padding-top: 60px; clear: both;}
 	.text_rt{text-align: right;}
+	.text_rt a{color: #aaa}
 
 
 	.jobsinfos{ width: 100%; margin-bottom: 20px; }
@@ -108,25 +113,21 @@ body{font-family: Tahoma,"Hiragino Sans GB","Microsoft YaHei",arial,simsun,sans-
     .sd_menu li{ cursor: pointer;}
 
     /*游戏列表样式*/
-	.gamelists{ list-style: none;}
-	.gamelists li{ display: block; width:870px; height:63px; padding-bottom: 30px; border-bottom:#b4b4b4 1px dashed; position: relative;  margin-bottom: 30px;}
-	.gamelists img,.gameDetails img{ display: block; float: left; width:62px; height: 62px; margin: 0px; padding: 0px; margin-right: 18px; vertical-align: top; }
-	.gamelists h4,.gameDetails h4{ font-size: 18px; line-height: 18px; font-weight: normal; display: inline-block;*display: inline; zoom:1; color: #02a881;  padding: 0px; margin: 0px; margin-right: 18px; }
-	.gamelists span,.gameFooter,.gameDetails span{ color: #999; font-size: 12px;}
-	.gamelists small{ display: block; position: absolute; width:82px; height: 32px; color: #fff; line-height: 32px; text-align: center; font-size:12px; background-color:#02a881;   -moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px; top:19px; right: 0px; text-decoration: none; cursor: pointer;}
-	.gamelists p{ width:580px; text-indent: 0em; line-height: 20px; margin-top: 5px;}
+	.gamelists{ list-style: none; margin-left: 0}
+	.gamelists li{ display: block; height:60px; padding-bottom: 20px; border-bottom:#b4b4b4 1px dashed; position: relative;  margin-bottom: 20px;}
+	.gamelists h4,.gamelists h4 a:link{ font-size: 18px; line-height: 18px; font-weight: normal; display: inline-block;*display: inline; zoom:1; padding: 0px; margin: 0px; margin-right: 18px; text-decoration: none;}
+	.gamelists span,.gameFooter{ color: #999; font-size: 12px;}
+	.gamelists p{ text-indent: 0em; height: 40px; width: 100%; display: block; line-height: 1.4; margin-top: 5px; font-size: 90%; word-break:keep-all;/* 不换行 */
+white-space:nowrap;/* 不换行 */
+overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+text-overflow:ellipsis;}
 
-	/*游戏详情样式*/
-	.gameDetails{ list-style: none; width: 674px; display: none;}
-	.gameDetails li{display: none;}
-	.gameDetail_heder{ height: 63px; padding-bottom: 25px; border-bottom:#b4b4b4 1px dashed; clear: both;}
-    .gameDetails  h5{ color: #555; font-size: 18px; margin-top: 20px; margin-bottom:15px; font-weight: normal;}
-	.gameDetail_heder span{ display: block; margin-top: 10px;}
-	.gameDetail_pic{ clear: both;height:330px; padding-bottom: 40px; border-bottom:#b4b4b4 1px dashed; }
-
-    .gameDetail_pic img{ width:630px; height: 290px; }
-    .gameDetail_describe{ padding-bottom: 55px;border-bottom:#b4b4b4 1px dashed; margin-bottom: 18px;}
-    .gameDetails p{text-indent: 0em; }
-
+	/*列表样式*/
     .gameFooter{ display: block;}
     .introducts .hd h2{_width: 200px; font-weight: bold;}
+code {border:1px dashed #ccc;  -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; box-shadow:inset 1px 1px white; font-family:monospace; color:#CF012B; background: white; font-size:inherit; padding: 2px 3px;}
+
+pre {padding:10px; background:#f4f4f4;  -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;border:none;}
+pre code {border: none; box-shadow: none; font-size:inherit;}
+pre {margin-bottom: 25px}
+li.year{height: auto;border-bottom: none;padding: 0;font-size: 200%;margin-bottom: 10px;}

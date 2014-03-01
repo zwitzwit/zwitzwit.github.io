@@ -3,11 +3,9 @@
 <head>
     <title>code test|FengKang's Blog</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/feed.xml">
 <link rel="icon" href="/images/icons/avatar.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--link rel="stylesheet" href="/style/css/bootstrap.css" type="text/css" media="screen"-->
 <script type="text/javascript" src="/style/jquery-1.7.1.min.js"></script>
     <meta content="一段程序" name="description" />
     <meta content="code,test," name="keywords" />
@@ -23,22 +21,17 @@
     <div class="sidernav fl" id="siderNav">
         <div class="logopt"><div class="logo"><a href="/" title="返回网站首页">返回首页</a></div></div>
         <ul class="sd_menu">
-  <li id="about"><a href="/about/">关于博主</a><i></i></li>
-  <li id="archive"><a href="/archive/">文章归档</a><i></i></li>
-  <li id="guestbook"><a href="/guestbook/">给我留言</a><i></i></li>
-  <li id="links" class="hidden-sm"><a href="/links/">友情链接</a><i></i></li>
-  <li><a href="/feed.xml" target="_blank">订阅博客</a><i></i></li>
-</ul>
+          <li id="about"><a href="/about/">关于博主</a><i></i></li>
+          <li id="archive"><a href="/archive/">文章归档</a><i></i></li>
+          <li id="guestbook"><a href="/guestbook/">给我留言</a><i></i></li>
+          <li id="links" class="hidden-sm"><a href="/links/">友情链接</a><i></i></li>
+          <li><a href="/feed.xml" target="_blank">订阅博客</a><i></i></li>
+        </ul>
+        <a href="javascript:void(0);" onClick="history.go(-1);" class="circle_back" title="返回上一页">返回</a>
+    </div>
 
 <script>
 $(document).ready(function(){
-	$('a').hover(
-		function(){
-			$(this).animate({opacity: 0.3}, 400)
-		},
-		function(){
-			$(this).animate({opacity: 1}, 400)
-		});
   $('.sd_menu>li').removeClass('on');
   var path = window.location.pathname.split('/')[1];
   switch(path){
@@ -55,20 +48,13 @@ $(document).ready(function(){
       $('#archive').addClass('on');
   }
 });
-function getURLParameter(name) {
-    return decodeURI(
-        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-    );
-}
 </script>
 
-        <a href="/" class="circle_back" title="返回网站首页">返回</a>
-    </div>
     <div class="maincont fl">
         <div class="introducts" id="commonbox">
             <div class="hd">
-                 <h1>IUNI品牌介绍</h1>
-                 <h2>code test</h2>
+                 <h2>医疗网络营销人：冯康（交流QQ：350905009）</h2>
+                 <h1>code test</h1>
             </div>
             <div class="artcils">
                 <p>测试一段程序，看显示的如何</p>
@@ -124,6 +110,8 @@ function getURLParameter(name) {
                 </p>
                 </div>
                 <div class="suggest">
+                    
+                    <a href="/blog/2013/03/01/three/" class="pre">&lt; 第三篇文章</a>
                      
                     <a href="/blog/2014/02/28/hello-world/" class="next">Hello world &gt;</a>
                     
@@ -160,18 +148,6 @@ CopryRight &copy; 2014 by <a href="http://fengkang.me" target="_blank">FengKang<
         $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
         prettyPrint();
     })
-
-    if (window.innerHeight)
-    winHeight = window.innerHeight;
-    else if ((document.body) && (document.body.clientHeight))
-    winHeight = document.body.clientHeight;
-    var oht=document.getElementById("commonbox").offsetHeight;//内容高度
-    var o2ht=winHeight;
-     if(o2ht>=oht){
-        document.getElementById("siderNav").style.height=o2ht+"px";
-     }else{
-         document.getElementById("siderNav").style.height=oht+"px";
-     }
 </script>
 </body>
 </html>

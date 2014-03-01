@@ -1,25 +1,28 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>{{ site.title }}|{{ site.description }}</title>
-  {% include header.html %}
-  <meta content="{{ site.headdesc }}" name="description"/>
-  <meta content="{{ site.headkeys }}" name="keywords"/>
+<title>{{ page.title }}|{{ site.title }}</title>
+{% include header.html %}
+<meta name="keywords" content="{{ site.headkeys }}" />
+<meta name="description" content="{{ site.headdesc }}" />
+<link rel="stylesheet" href="/style/main.css" />
 </head>
 <body>
-<div class="container">
-<div class="banner">
-{% include banner.html %}
-</div>
 <div class="main">
-<div class="title"><a href="{{ page.url }}">{{ page.title }}</a></div>
-<div class="content">
-	{{ content }}
-</div>
-</div>
+    {% include banner.html %}
+    <div class="maincont fl">
+		<div class="introducts" id="commonbox">
+			<div class="hd">
+				 <h2>{{ page.stitle }}</h2>
+				 <h1>{{ page.title }}</h1>
+			</div>
+			<div class="artcils">
+				{{ content }}
+				{% include footer.html %}
+			</div>
 
-{% include footer.html %}
+		</div>
+	</div>
 </div>
 </body>
 </html>
-

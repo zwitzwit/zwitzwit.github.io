@@ -1,8 +1,9 @@
 ---
 layout: page
-title: 留言板
+title: 给我留言
+stitle: GuestBook
 ---
-有任何留言，都可以留在这里。希望你会喜欢，大部分留言我都会回复，如果有任何疑问，也可以直接给我发邮件。
+希望你会喜欢我的博客，大部分留言我都会回复，如果有任何疑问，也可以直接给我[发邮件][1]。
 
 <!-- Duoshuo Comment BEGIN -->
 <div class="ds-thread"></div>
@@ -18,3 +19,5 @@ var duoshuoQuery = {short_name:"fengkangblog"};
 })();
 </script>
 <!-- Duoshuo Comment END -->
+
+[1]: mailto:zwit@qq.com

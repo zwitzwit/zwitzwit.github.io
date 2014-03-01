@@ -1,37 +1,32 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>FengKang's Blog|人生的几个十年</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>关于博主|FengKang's Blog</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="/feed.xml">
 <link rel="icon" href="/images/icons/avatar.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--link rel="stylesheet" href="/style/css/bootstrap.css" type="text/css" media="screen"-->
 <script type="text/javascript" src="/style/jquery-1.7.1.min.js"></script>
-  <meta content="FengKang的博客，记录工作和生活，讲述自己的网络营销道路与医疗营销的那些事。" name="description"/>
-  <meta content="FengKang,冯康的博客,医疗营销,网络营销,SEM,SEO,微营销,社会化媒体营销" name="keywords"/>
+<meta name="keywords" content="FengKang,冯康的博客,医疗营销,网络营销,SEM,SEO,微营销,社会化媒体营销" />
+<meta name="description" content="FengKang的博客，记录工作和生活，讲述自己的网络营销道路与医疗营销的那些事。" />
+<link rel="stylesheet" href="/style/main.css" />
 </head>
 <body>
-<div class="container">
-<div class="banner">
-<ul class="sd_menu">
-  <li id="about"><a href="/about/">关于博主</a><i></i></li>
-  <li id="archive"><a href="/archive/">文章归档</a><i></i></li>
-  <li id="guestbook"><a href="/guestbook/">给我留言</a><i></i></li>
-  <li id="links" class="hidden-sm"><a href="/links/">友情链接</a><i></i></li>
-  <li><a href="/feed.xml" target="_blank">订阅博客</a><i></i></li>
-</ul>
+<div class="main">
+    <div class="sidernav fl" id="siderNav">
+        <div class="logopt"><div class="logo"><a href="/" title="返回网站首页">返回首页</a></div></div>
+        <ul class="sd_menu">
+          <li id="about"><a href="/about/">关于博主</a><i></i></li>
+          <li id="archive"><a href="/archive/">文章归档</a><i></i></li>
+          <li id="guestbook"><a href="/guestbook/">给我留言</a><i></i></li>
+          <li id="links" class="hidden-sm"><a href="/links/">友情链接</a><i></i></li>
+          <li><a href="/feed.xml" target="_blank">订阅博客</a><i></i></li>
+        </ul>
+        <a href="javascript:void(0);" onClick="history.go(-1);" class="circle_back" title="返回上一页">返回</a>
+    </div>
 
 <script>
 $(document).ready(function(){
-	$('a').hover(
-		function(){
-			$(this).animate({opacity: 0.3}, 400)
-		},
-		function(){
-			$(this).animate({opacity: 1}, 400)
-		});
   $('.sd_menu>li').removeClass('on');
   var path = window.location.pathname.split('/')[1];
   switch(path){
@@ -48,18 +43,16 @@ $(document).ready(function(){
       $('#archive').addClass('on');
   }
 });
-function getURLParameter(name) {
-    return decodeURI(
-        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
-    );
-}
 </script>
 
-</div>
-<div class="main">
-<div class="title"><a href="/about/index.html">关于我</a></div>
-<div class="content">
-	<p>专注互联网营销</p>
+    <div class="maincont fl">
+		<div class="introducts" id="commonbox">
+			<div class="hd">
+				 <h2>About me</h2>
+				 <h1>关于博主</h1>
+			</div>
+			<div class="artcils">
+				<p>专注互联网营销</p>
 
 <h3>社交</h3>
 
@@ -77,13 +70,13 @@ function getURLParameter(name) {
 
 <p>zwit(at)qq.com</p>
 
-</div>
-</div>
-
-<div class="footer">
+				<div class="footer">
 CopryRight &copy; 2014 by <a href="http://fengkang.me" target="_blank">FengKang</a>
 </div>
+			</div>
+
+		</div>
+	</div>
 </div>
 </body>
 </html>
-
