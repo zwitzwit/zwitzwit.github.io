@@ -9,63 +9,70 @@
     <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
+    <link rel="stylesheet" href="/style/main.css" type="text/css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="banner">
-            {% include banner.html %}
-        </div>
-
-        <div class="main clearfix">
-            <div class="title"><a href="{{ page.url }}">{{ page.title }}</a>
+<div class="main">
+    <div class="sidernav fl" id="siderNav">
+        <div class="logopt"><div class="logo"><a href="/" title="返回网站首页">返回首页</a></div></div>
+        {% include banner.html %}
+        <a href="/" class="circle_back" title="返回网站首页">返回</a>
+    </div>
+    <div class="maincont fl">
+        <div class="introducts" id="commonbox">
+            <div class="hd">
+                 <h1>IUNI品牌介绍</h1>
+                 <h2>{{ page.title }}</h2>
             </div>
-
-            <!-- <div class="author"><img src="/images/authors/guojing.jpg"/> <span class="name">放开那个西红柿</span></div> -->
-
-            <div class="content {{ page.categories }}_content_css">
+            <div class="artcils">
                 {{ content }}
-            </div>
-
-            <div class="info">
-                记于{{ page.date | date:"%Y年%m月%d日"}} EOF
-            </div>
-
-            <div class="forb">
-                {% for tag in page.tags %}
-                <a href="/tags/#{{ tag }}">#{{ tag }}</a>
-                {% endfor %}
-            </div>
-
-            <div class="suggest">
-                {% if page.previous %}
-                <a href="{{page.previous.url}}" class="pre">&lt; {{page.previous.title}}</a>
-                {% endif %} {% if page.next %}
-                <a href="{{page.next.url}}" class="next">{{page.next.title}} &gt;</a>
-                {% endif %}
-            </div>
-        </div>
-
-        <div class="comments">
-            {% include duoshuo.html %}
-        </div>
-
-        {% include footer.html %}
-
         <!--
           Copryright {{site.author.name}} 未经允许，严禁直接从Github上转载我的文章，所有文章遵循CC协议，允许复制和转载，但需要保留原作者链接。
           该文章{{ page.title }}写于{{ page.date | date:"%Y年%m月%d日"}}。
         -->
+                <div class="text_date">
+                    <p class="text_rt">记于{{ page.date | date:"%Y年%m月%d日"}} EOF</p>
+                    <p class="text_rt">{% for tag in page.tags %}
+                <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+                {% endfor %}</p>
+                </div>
+                <div class="suggest">
+                    {% if page.previous %}
+                    <a href="{{page.previous.url}}" class="pre">&lt; {{page.previous.title}}</a>
+                    {% endif %} {% if page.next %}
+                    <a href="{{page.next.url}}" class="next">{{page.next.title}} &gt;</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="comments">
+                {% include duoshuo.html %}
+            </div>
+            {% include footer.html %}
+        </div>
     </div>
-    <link rel="stylesheet" href="http://cdn.staticfile.org/prettify/r298/prettify.min.css">
-    <script type="text/javascript" src="http://cdn.staticfile.org/prettify/r298/prettify.min.js"></script>
-    <script type="text/javascript">
+</div>
+
+<link rel="stylesheet" href="http://cdn.staticfile.org/prettify/r298/prettify.min.css">
+<script type="text/javascript" src="http://cdn.staticfile.org/prettify/r298/prettify.min.js"></script>
+<script type="text/javascript">
     $(function() {
         //$("pre").addClass("prettyprint");
         $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
         prettyPrint();
     })
-    </script>
-</body>
 
+    if (window.innerHeight)
+    winHeight = window.innerHeight;
+    else if ((document.body) && (document.body.clientHeight))
+    winHeight = document.body.clientHeight;
+    var oht=document.getElementById("commonbox").offsetHeight;//内容高度
+    var o2ht=winHeight;
+     if(o2ht>=oht){
+        document.getElementById("siderNav").style.height=o2ht+"px";
+     }else{
+         document.getElementById("siderNav").style.height=oht+"px";
+     }
+</script>
+</body>
 </html>
