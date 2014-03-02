@@ -13,6 +13,7 @@
     <meta property="og:url" content="http://fengkang.me//blog/2014/03/01/yi-yuan-wang-luo-ying-xiao-6-yao-su/" />
     <meta property="og:title" content="医院网络营销成功所需的六要素" />
     <meta property="og:description" content="医院网络营销要搭建自己合适的团队，按照项目计划分配人员。很多医院网络营销主管多半会面对这样的问题，自己组队伍又不懂，而且投入资本较大，把项目承包出去做呢，还不放心，考虑来去，最后还是自己做。医院网络营销招聘专业人才来做，也可以寻培训团队给员工培训。" />
+    <link rel="stylesheet" href="http://cdn.staticfile.org/prettify/r298/prettify.min.css">
     <link rel="stylesheet" href="/style/main.css" type="text/css">
 </head>
 
@@ -34,18 +35,11 @@
 $(document).ready(function(){
   $('.sd_menu>li').removeClass('on');
   var path = window.location.pathname.split('/')[1];
-  switch(path){
-    case 'about':
-      $('#about').addClass('on');
-      break;
-    case 'guestbook':
-      $('#guestbook').addClass('on');
-      break;
-    case 'links':
-      $('#links').addClass('on');
-      break;
-    default:
-      $('#archive').addClass('on');
+  var cc = ['about','guestbook','links'];
+  if($.inArray(path,cc)>-1){
+    $('#'+path).addClass('on');
+  }else{
+    $('#archive').addClass('on');
   }
 });
 </script>
@@ -61,7 +55,7 @@ $(document).ready(function(){
 
 <h3>一、医院网站策划包装问题</h3>
 
-<p>目前网站建设的技术门槛很低，很多CMS都可以拿来用只需要美工制作一套模板即可，这样，一个医院网站就搭建成了，想必很多医院都是这样做的。网站是做好了，但是效果究竟如何呢，网站流量很低、患者咨询数量少、预约电话罕见等等问题，这些都和你的网站有着莫大关系。</p>
+<p>目前网站建设的技术门槛很低，很多<a href="http://baike.baidu.com/subview/15867/12489281.htm" title="百度百科 CMS">CMS</a>都可以拿来用只需要美工制作一套模板即可，这样，一个医院网站就搭建成了，想必很多医院都是这样做的。网站是做好了，但是效果究竟如何呢，网站流量很低、患者咨询数量少、预约电话罕见等等问题，这些都和你的网站有着莫大关系。</p>
 
 <p>医院网络营销患者是中心，做网站要做好网站的<code>策划</code>与<code>整体包装</code>，要做好网站包装要做好一下两点：</p>
 
@@ -87,7 +81,7 @@ $(document).ready(function(){
 
 <h3>三、医院网站安全隐患</h3>
 
-<p>医院网络营销起步早的医院都有自己的服务器，刚起步的医院多数用的都是虚拟主机。虚拟主机有价格便宜管理方便的优势，虚拟主机的优势也是医院网站的弊端，一个服务器上放置N个网站使服务器很不稳定，如果有患者打不开医院网站，后果可想而知，管理方便更用不着，那么多的数据都放在被人的手里，作为医院营销人员，心放得下吗？如果有一天你网站的数据被提取了，或者数据全部丢失了，那医院网络营销工作也功亏一篑。做大事者不拘小节，有条件的医院还是要使用自己的独立服务器。</p>
+<p>医院网络营销起步早的医院都有自己的<a href="http://baike.baidu.com/link?url=M7_80DfWyUAvI2PD8gE13usD01sbhYfRDhP8EyMRYRNdCTVLmDRI0UHmBfZ3yFY5" title="百度百科 服务器">服务器</a>，刚起步的医院多数用的都是虚拟主机。虚拟主机有价格便宜管理方便的优势，虚拟主机的优势也是医院网站的弊端，一个服务器上放置N个网站使服务器很不稳定，如果有患者打不开医院网站，后果可想而知，管理方便更用不着，那么多的数据都放在被人的手里，作为医院营销人员，心放得下吗？如果有一天你网站的数据被提取了，或者数据全部丢失了，那医院网络营销工作也功亏一篑。做大事者不拘小节，有条件的医院还是要使用自己的独立服务器。</p>
 
 <p>做到医院网站安全要做到以下几点：</p>
 
@@ -131,11 +125,11 @@ $(document).ready(function(){
                 <a href="/tags/#网络营销">#网络营销</a>
                 </p>
                 </div>
-                <div class="suggest">
-                    
-                    <a href="/blog/2014/02/28/hello-world/" class="pre">&lt; Hello world</a>
-                     
-                </div>
+            </div>
+            <div class="suggest">
+                
+                前一篇：<a href="/blog/2014/02/28/hello-world/" class="pre">Hello world</a><br>
+                 
             </div>
             <div class="comments">
                 <!-- Duoshuo Comment BEGIN -->
@@ -159,14 +153,12 @@ CopryRight &copy; 2014 by <a href="http://fengkang.me" target="_blank">FengKang<
         </div>
     </div>
 </div>
-
-<link rel="stylesheet" href="http://cdn.staticfile.org/prettify/r298/prettify.min.css">
 <script type="text/javascript" src="http://cdn.staticfile.org/prettify/r298/prettify.min.js"></script>
 <script type="text/javascript">
     $(function() {
-        //$("pre").addClass("prettyprint");
         $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
         prettyPrint();
+        $('.artcils a').attr('target','_blank');
     })
 </script>
 </body>

@@ -29,18 +29,11 @@
 $(document).ready(function(){
   $('.sd_menu>li').removeClass('on');
   var path = window.location.pathname.split('/')[1];
-  switch(path){
-    case 'about':
-      $('#about').addClass('on');
-      break;
-    case 'guestbook':
-      $('#guestbook').addClass('on');
-      break;
-    case 'links':
-      $('#links').addClass('on');
-      break;
-    default:
-      $('#archive').addClass('on');
+  var cc = ['about','guestbook','links'];
+  if($.inArray(path,cc)>-1){
+    $('#'+path).addClass('on');
+  }else{
+    $('#archive').addClass('on');
   }
 });
 </script>
@@ -55,33 +48,6 @@ $(document).ready(function(){
 				<p>散落的贝壳，像海的记忆：</p>
 
 <div class="tagcloud">
-
-
-
-
-
-
-
-
-<span class=" tag0 "><a href="#三">三</a></span>
-
-
-
-
-
-
-
-
-<span class=" tag0 "><a href="#code">code</a></span>
-
-
-
-
-
-
-
-
-<span class=" tag0 "><a href="#test">test</a></span>
 
 
 
@@ -116,30 +82,6 @@ $(document).ready(function(){
 
 
 <ul class="archive">
-    
-    <li class="year" id="三">三 (1)</li>
-    
-    <li class="item">
-        <time datetime="2013-03-01">2013-03-01</time>
-        <a href="/blog/2013/03/01/three/" title="第三篇文章">第三篇文章</a>
-    </li>   
-    
-    
-    <li class="year" id="code">code (1)</li>
-    
-    <li class="item">
-        <time datetime="2014-02-28">2014-02-28</time>
-        <a href="/test/2014/02/28/code-test/" title="code test">code test</a>
-    </li>   
-    
-    
-    <li class="year" id="test">test (1)</li>
-    
-    <li class="item">
-        <time datetime="2014-02-28">2014-02-28</time>
-        <a href="/test/2014/02/28/code-test/" title="code test">code test</a>
-    </li>   
-    
     
     <li class="year" id="hello">hello (1)</li>
     

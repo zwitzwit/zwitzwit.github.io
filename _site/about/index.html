@@ -29,18 +29,11 @@
 $(document).ready(function(){
   $('.sd_menu>li').removeClass('on');
   var path = window.location.pathname.split('/')[1];
-  switch(path){
-    case 'about':
-      $('#about').addClass('on');
-      break;
-    case 'guestbook':
-      $('#guestbook').addClass('on');
-      break;
-    case 'links':
-      $('#links').addClass('on');
-      break;
-    default:
-      $('#archive').addClass('on');
+  var cc = ['about','guestbook','links'];
+  if($.inArray(path,cc)>-1){
+    $('#'+path).addClass('on');
+  }else{
+    $('#archive').addClass('on');
   }
 });
 </script>

@@ -13,6 +13,7 @@
     <meta property="og:url" content="http://fengkang.me//blog/2014/02/28/hello-world/" />
     <meta property="og:title" content="Hello world" />
     <meta property="og:description" content="github+Jekyll的第一篇文章" />
+    <link rel="stylesheet" href="http://cdn.staticfile.org/prettify/r298/prettify.min.css">
     <link rel="stylesheet" href="/style/main.css" type="text/css">
 </head>
 
@@ -34,18 +35,11 @@
 $(document).ready(function(){
   $('.sd_menu>li').removeClass('on');
   var path = window.location.pathname.split('/')[1];
-  switch(path){
-    case 'about':
-      $('#about').addClass('on');
-      break;
-    case 'guestbook':
-      $('#guestbook').addClass('on');
-      break;
-    case 'links':
-      $('#links').addClass('on');
-      break;
-    default:
-      $('#archive').addClass('on');
+  var cc = ['about','guestbook','links'];
+  if($.inArray(path,cc)>-1){
+    $('#'+path).addClass('on');
+  }else{
+    $('#archive').addClass('on');
   }
 });
 </script>
@@ -77,13 +71,11 @@ $(document).ready(function(){
                 <a href="/tags/#world">#world</a>
                 </p>
                 </div>
-                <div class="suggest">
-                    
-                    <a href="/test/2014/02/28/code-test/" class="pre">&lt; code test</a>
-                     
-                    <a href="/blog/2014/03/01/yi-yuan-wang-luo-ying-xiao-6-yao-su/" class="next">医院网络营销成功所需的六要素 &gt;</a>
-                    
-                </div>
+            </div>
+            <div class="suggest">
+                 
+                后一篇：<a href="/blog/2014/03/01/yi-yuan-wang-luo-ying-xiao-6-yao-su/" class="next">医院网络营销成功所需的六要素</a>
+                
             </div>
             <div class="comments">
                 <!-- Duoshuo Comment BEGIN -->
@@ -107,14 +99,12 @@ CopryRight &copy; 2014 by <a href="http://fengkang.me" target="_blank">FengKang<
         </div>
     </div>
 </div>
-
-<link rel="stylesheet" href="http://cdn.staticfile.org/prettify/r298/prettify.min.css">
 <script type="text/javascript" src="http://cdn.staticfile.org/prettify/r298/prettify.min.js"></script>
 <script type="text/javascript">
     $(function() {
-        //$("pre").addClass("prettyprint");
         $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
         prettyPrint();
+        $('.artcils a').attr('target','_blank');
     })
 </script>
 </body>

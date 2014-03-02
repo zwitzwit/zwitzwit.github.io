@@ -12,7 +12,7 @@
 
 &lt;h3&gt;一、医院网站策划包装问题&lt;/h3&gt;
 
-&lt;p&gt;目前网站建设的技术门槛很低，很多CMS都可以拿来用只需要美工制作一套模板即可，这样，一个医院网站就搭建成了，想必很多医院都是这样做的。网站是做好了，但是效果究竟如何呢，网站流量很低、患者咨询数量少、预约电话罕见等等问题，这些都和你的网站有着莫大关系。&lt;/p&gt;
+&lt;p&gt;目前网站建设的技术门槛很低，很多&lt;a href=&quot;http://baike.baidu.com/subview/15867/12489281.htm&quot; title=&quot;百度百科 CMS&quot;&gt;CMS&lt;/a&gt;都可以拿来用只需要美工制作一套模板即可，这样，一个医院网站就搭建成了，想必很多医院都是这样做的。网站是做好了，但是效果究竟如何呢，网站流量很低、患者咨询数量少、预约电话罕见等等问题，这些都和你的网站有着莫大关系。&lt;/p&gt;
 
 &lt;p&gt;医院网络营销患者是中心，做网站要做好网站的&lt;code&gt;策划&lt;/code&gt;与&lt;code&gt;整体包装&lt;/code&gt;，要做好网站包装要做好一下两点：&lt;/p&gt;
 
@@ -38,7 +38,7 @@
 
 &lt;h3&gt;三、医院网站安全隐患&lt;/h3&gt;
 
-&lt;p&gt;医院网络营销起步早的医院都有自己的服务器，刚起步的医院多数用的都是虚拟主机。虚拟主机有价格便宜管理方便的优势，虚拟主机的优势也是医院网站的弊端，一个服务器上放置N个网站使服务器很不稳定，如果有患者打不开医院网站，后果可想而知，管理方便更用不着，那么多的数据都放在被人的手里，作为医院营销人员，心放得下吗？如果有一天你网站的数据被提取了，或者数据全部丢失了，那医院网络营销工作也功亏一篑。做大事者不拘小节，有条件的医院还是要使用自己的独立服务器。&lt;/p&gt;
+&lt;p&gt;医院网络营销起步早的医院都有自己的&lt;a href=&quot;http://baike.baidu.com/link?url=M7_80DfWyUAvI2PD8gE13usD01sbhYfRDhP8EyMRYRNdCTVLmDRI0UHmBfZ3yFY5&quot; title=&quot;百度百科 服务器&quot;&gt;服务器&lt;/a&gt;，刚起步的医院多数用的都是虚拟主机。虚拟主机有价格便宜管理方便的优势，虚拟主机的优势也是医院网站的弊端，一个服务器上放置N个网站使服务器很不稳定，如果有患者打不开医院网站，后果可想而知，管理方便更用不着，那么多的数据都放在被人的手里，作为医院营销人员，心放得下吗？如果有一天你网站的数据被提取了，或者数据全部丢失了，那医院网络营销工作也功亏一篑。做大事者不拘小节，有条件的医院还是要使用自己的独立服务器。&lt;/p&gt;
 
 &lt;p&gt;做到医院网站安全要做到以下几点：&lt;/p&gt;
 
@@ -90,68 +90,6 @@
 				<pubDate>Fri, 28 Feb 2014 00:00:00 +0800</pubDate>
 				<link>http://fengkang.me/blog/2014/02/28/hello-world/</link>
 				<guid isPermaLink="true">http://fengkang.me/blog/2014/02/28/hello-world/</guid>
-			</item>
-		
-			<item>
-				<title>code test</title>
-				<description>&lt;p&gt;测试一段程序，看显示的如何&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;for(var i=0; i&amp;lt;10; i++){
-    document.write(i);
-}
-alert(&#39;hello&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;fdfdsaf&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$(document).ready(function(){
-    $(&#39;a&#39;).hover(
-        function(){
-            $(this).animate({opacity: 0.3}, 400)
-        }, 
-        function(){
-            $(this).animate({opacity: 1}, 400)
-        });
-});
-function getURLParameter(name) {
-    return decodeURI(
-        (RegExp(name + &#39;=&#39; + &#39;(.+?)(&amp;amp;|$)&#39;).exec(location.search)||[,null])[1]
-    );
-}
-$(document).ready(function(){
-    $(&#39;a&#39;).hover(
-        function(){
-            $(this).animate({opacity: 0.3}, 400)
-        }, 
-        function(){
-            $(this).animate({opacity: 1}, 400)
-        });
-});
-function getURLParameter(name) {
-    return decodeURI(
-        (RegExp(name + &#39;=&#39; + &#39;(.+?)(&amp;amp;|$)&#39;).exec(location.search)||[,null])[1]
-    );
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-				<pubDate>Fri, 28 Feb 2014 00:00:00 +0800</pubDate>
-				<link>http://fengkang.me/test/2014/02/28/code-test/</link>
-				<guid isPermaLink="true">http://fengkang.me/test/2014/02/28/code-test/</guid>
-			</item>
-		
-			<item>
-				<title>第三篇文章</title>
-				<description>&lt;h3&gt;出道&lt;/h3&gt;
-
-&lt;p&gt;在这果膦 国楞历地枯&lt;/p&gt;
-
-&lt;h3&gt;是不国国国在是&lt;/h3&gt;
-
-&lt;p&gt;蝇不不国要·中中&lt;code&gt;偿炙砂人&lt;/code&gt;j中吵醒办翰林是轼晕cjkljkda&lt;/p&gt;
-</description>
-				<pubDate>Fri, 01 Mar 2013 00:00:00 +0800</pubDate>
-				<link>http://fengkang.me/blog/2013/03/01/three/</link>
-				<guid isPermaLink="true">http://fengkang.me/blog/2013/03/01/three/</guid>
 			</item>
 		
 	</channel>

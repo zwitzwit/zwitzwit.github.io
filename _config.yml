@@ -1,7 +1,7 @@
 auto:	          true
 
 markdown:         rdiscount
-pygments:         true
+pygments:         false
 paginate:         1
 permalink:        /:categories/:year/:month/:day/:title/
 
