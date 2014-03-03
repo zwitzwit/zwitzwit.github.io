@@ -3,11 +3,11 @@
     padding: 0;
 }
 ::selection {
-    background-color:#FD3939;
+    background-color:#02A881;
     color: #fff;
 }
 ::-moz-selection {
-    background-color:#FD3939;
+    background-color:#02A881;
     color: #fff;
 }
 img::selection {
@@ -489,7 +489,7 @@ p code {
     -webkit-border-radius:4px;
     border-radius:4px;
     box-shadow:inset 1px 1px white;
-    font-family:monospace;
+    font-family:inherit;
     color:#CF012B;
     background: #F8F8F8;
     font-size:inherit;

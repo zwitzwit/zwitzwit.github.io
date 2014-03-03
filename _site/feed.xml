@@ -7,6 +7,100 @@
 		<atom:link href="http://fengkang.me/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>以用户为中心的Web网站设计流程</title>
+				<description>&lt;p&gt;以往设计网页时，我们往往会怎么好看怎么做，满足自己的口味，现在来看，这些都是耍流氓，不以用户为中心的WEB设计都是耍流氓，这里介绍下以用户为中心的网站设计流程。&lt;/p&gt;
+
+&lt;p&gt;设计一个Web网站(如提供邮箱服务、社区服务等)，需要考虑五个层次，并按顺序依次实现。五个层次分别为：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;战略层：明确公司与用户对于网站的期望和目标;&lt;/li&gt;
+&lt;li&gt;范围层：将战略层确定的目标转化为网站提供的功能和内容;&lt;/li&gt;
+&lt;li&gt;结构层：设计网站架构图，将分散的功能和内容组成一个整体;&lt;/li&gt;
+&lt;li&gt;框架层：将抽象的架构图转化为详细的线框图，确定界面外观、导航信息及信息要素的布局;&lt;/li&gt;
+&lt;li&gt;表现层：按照“低保真”的线框图设计出最终的Web网站。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;以下我将逐一讲解每层的工作目标、工作内容及输出物：&lt;/p&gt;
+
+&lt;h3&gt;一、战略层：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;工作目标：&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;确定网站目标：我们要从这个网站得到什么?&lt;/li&gt;
+&lt;li&gt;确定用户需求：我们的用户要从这个网站得到什么?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作内容：&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;确定网站目标&lt;/li&gt;
+&lt;li&gt;商业目标：替公司赚钱还是替公司省钱?要赚多少钱?&lt;/li&gt;
+&lt;li&gt;品牌识别：将品牌形象具体而明确地写进目标，将会提高呈现出积极的品牌形象的机会;&lt;/li&gt;
+&lt;li&gt;成功标准：将战略或商业目标进行量化。如通过衡量每一个注册用户单月的访问次数表明了该网站对核心用户的价值。&lt;/li&gt;
+&lt;li&gt;确定用户需求&lt;/li&gt;
+&lt;li&gt;用户细分：可以按照人口统计学标准，价值观标准和用户对技术及网站本身观点划分用户;&lt;/li&gt;
+&lt;li&gt;用户研究：使用问卷调查、用户访谈、焦点小组等方法收集、分析用户观点和需求。并可通过创建虚拟人物角色来将分散的资料关联起来。帮助你确保在整个设计过程期间把用户始终放在心里。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输出物：&lt;/strong&gt;市场需求文档(MRD)、用户研究报告、竞争对手分析报告等&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;二、范围层：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;工作目标：&lt;/strong&gt;确定网站的功能需求或功能规格&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作内容：&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;收集需求：从用户处收集需求，各部门聚集采用头脑风暴收集需求;从竞争对手处获得启发;使用用户场景来描述需求;&lt;/li&gt;
+&lt;li&gt;确定需求优先级：需要去评估这些需求是否能满足我们的战略目标(无论是网站目标还是用户需求)。另外，还要确定实现这些需求的可行性有多大?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输出物：&lt;/strong&gt;产品需求文档(PRD)、产品功能规格文档等&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;三、结构层：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;工作目标：&lt;/strong&gt;设计网站架构图，将分散的功能和内容组成一个整体&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作内容：&lt;/strong&gt;进行交互设计、搭建信息架构&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输出物：&lt;/strong&gt;网站架构图。如下图所示：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://img15.poco.cn/mypoco/myphoto/20140303/19/1744117532014030319403831THX.jpg&quot; alt=&quot;以用户为中心的Web网站设计流程&quot; /&gt;&lt;br&gt;Google AdWords-AdSense&lt;/p&gt;
+
+&lt;h3&gt;四、框架层：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;工作目标：&lt;/strong&gt;将抽象的架构图转化为详细的线框图，确定界面外观、导航信息及信息要素的布局。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作内容：&lt;/strong&gt;进行详细的界面、导航设计及信息摆放布局。可以使用Visio或者Axure RP来完成线框图的设计。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输出物：&lt;/strong&gt;线框图。如下图所示：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;http://img15.poco.cn/mypoco/myphoto/20140303/19/174411753201403031940405THX.jpg&quot; alt=&quot;以用户为中心的Web网站设计流程&quot; /&gt;&lt;br&gt;邮箱产品写信页面线框图&lt;/p&gt;
+
+&lt;h3&gt;五、表现层&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;工作目标：&lt;/strong&gt;按照“低保真”的线框图设计出最终的Web网站&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作内容：&lt;/strong&gt;遵照突出重点、保持一致性的原则以及统一的配色排版方案设计出最终的Web网站&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输出物：&lt;/strong&gt;最终Web网站&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+				<pubDate>Mon, 03 Mar 2014 00:00:00 +0800</pubDate>
+				<link>http://fengkang.me/blog/2014/03/03/user-centered-web-site-design-process/</link>
+				<guid isPermaLink="true">http://fengkang.me/blog/2014/03/03/user-centered-web-site-design-process/</guid>
+			</item>
+		
+			<item>
 				<title>医院网络营销成功所需的六要素</title>
 				<description>&lt;p&gt;互联网技术的发展、成熟与互联网所具有的独特的特性，产生了网络营销。民营医院在经济形势的逼迫、国家政策的调整之下，为了生存和发展，于是医院网络营销诞生了。很多医院都看重互联网的低成本投入高回报率的特性，纷纷开展了医院网络营销工作，大家开展医院网络营销都会遇到相似的问题，和大家分享一下医院网络营销成功必须要解决的六大问题。&lt;/p&gt;
 
